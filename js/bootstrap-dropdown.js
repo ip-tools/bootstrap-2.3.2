@@ -59,7 +59,7 @@
         $parent.toggleClass('open')
       }
 
-      $this.focus()
+      $this.trigger('focus')
 
       return false
     }
@@ -86,7 +86,7 @@
       isActive = $parent.hasClass('open')
 
       if (!isActive || (isActive && e.keyCode == 27)) {
-        if (e.which == 27) $parent.find(toggle).focus()
+        if (e.which == 27) $parent.find(toggle).trigger('focus')
         return $this.click()
       }
 
@@ -102,7 +102,7 @@
 
       $items
         .eq(index)
-        .focus()
+        .trigger('focus')
     }
 
   }

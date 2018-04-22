@@ -172,7 +172,7 @@
 
   , listen: function () {
       this.$element
-        .on('focus',    $.proxy(this.focus, this))
+        .on('focus',    $.proxy(this.trigger, this, 'focus'))
         .on('blur',     $.proxy(this.blur, this))
         .on('keypress', $.proxy(this.keypress, this))
         .on('keyup',    $.proxy(this.keyup, this))
@@ -271,7 +271,7 @@
       e.stopPropagation()
       e.preventDefault()
       this.select()
-      this.$element.focus()
+      this.$element.trigger('focus')
     }
 
   , mouseenter: function (e) {

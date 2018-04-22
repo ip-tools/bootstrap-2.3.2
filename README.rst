@@ -8,6 +8,11 @@ About
 *****
 Yes, this is the ancient Bootstrap 2.3.2 taken from https://www.npmjs.com/package/bootstrap-2.3.2.
 
+While that 1.0.0 release contains the vanilla version,
+versions 2.0.0 and greater add some improvements:
+
+- jQuery 3 compatibility
+
 
 ***************
 Troubleshooting
